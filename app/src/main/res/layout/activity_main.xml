@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Швидкість навчання"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sh0.001"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/sh0.001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.001"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/sh0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.3"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/sh0.2"
+        app:layout_constraintTop_toTopOf="@+id/sh0.2" />
+
+    <CheckBox
+        android:id="@+id/sh0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.2"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/sh0.1"
+        app:layout_constraintTop_toTopOf="@+id/sh0.1" />
+
+    <CheckBox
+        android:id="@+id/sh0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/sh0.05"
+        app:layout_constraintTop_toTopOf="@+id/sh0.05" />
+
+    <CheckBox
+        android:id="@+id/sh0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.05"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/sh0.01"
+        app:layout_constraintTop_toBottomOf="@+id/sh0.001" />
+
+    <CheckBox
+        android:id="@+id/sh0.01"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="onCheckboxClicked"
+        android:text="0.01"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sh0.05"
+        app:layout_constraintEnd_toEndOf="@+id/sh0.001"
+        app:layout_constraintStart_toStartOf="@+id/sh0.001"
+        app:layout_constraintTop_toTopOf="@+id/sh0.001" />
+
+    <Button
+        android:id="@+id/butDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Готово"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sh0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

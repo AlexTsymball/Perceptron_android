@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.perceptron.Iteration">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Кількість ітерацій"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/i100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/i100" />
+
+    <CheckBox
+        android:id="@+id/i100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="70dp"
+        android:text="100"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/i1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="1000"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintStart_toStartOf="@+id/i500"
+        app:layout_constraintTop_toTopOf="@+id/i500" />
+
+    <CheckBox
+        android:id="@+id/i500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="500"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintStart_toStartOf="@+id/i200"
+        app:layout_constraintTop_toTopOf="@+id/i200" />
+
+    <CheckBox
+        android:id="@+id/i200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="200"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintStart_toStartOf="@+id/i100"
+        app:layout_constraintTop_toTopOf="@+id/i100" />
+
+    <Button
+        android:id="@+id/butRes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Результат"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i1000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
